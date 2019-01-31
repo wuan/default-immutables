@@ -1,4 +1,4 @@
-package com.mercateo.immutables;
+package com.uniscon.immutables;
 
 import org.immutables.value.Value;
 

@@ -1,4 +1,4 @@
-package com.mercateo.immutables;
+package com.uniscon.immutables;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;

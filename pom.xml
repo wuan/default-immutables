@@ -3,22 +3,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>default-immutables</artifactId>
-    <groupId>com.mercateo</groupId>
+    <groupId>com.uniscon</groupId>
     <version>1.2.6-SNAPSHOT</version>
 
     <name>default-immutables</name>
     <description>Default styles for Immutables</description>
-    <url>https://github.com/Mercateo/default-immutables</url>
+    <url>https://github.com/Uniscon/default-immutables</url>
     <inceptionYear>2016</inceptionYear>
 
     <organization>
-        <name>Mercateo AG</name>
-        <url>http://www.mercateo.com</url>
+        <name>Uniscon GmbH</name>
+        <url>http://www.uniscon.com</url>
     </organization>
 
     <issueManagement>
         <system>github</system>
-        <url>https://github.com/Mercateo/default-immutables/issues</url>
+        <url>https://github.com/Uniscon/default-immutables/issues</url>
     </issueManagement>
 
     <distributionManagement>
@@ -39,10 +39,10 @@
         <developer>
             <id>andreas_wuerl</id>
             <name>Andreas Würl</name>
-            <email>andreas.wuerl@mercateo.com</email>
-            <url>http://www.mercateo.com</url>
-            <organization>Mercateo AG</organization>
-            <organizationUrl>http://www.mercateo.com</organizationUrl>
+            <email>andreas.wuerl@uniscon.com</email>
+            <url>http://www.uniscon.com</url>
+            <organization>Uniscon GmbH</organization>
+            <organizationUrl>http://www.uniscon.com</organizationUrl>
             <roles>
                 <role>developer</role>
             </roles>
@@ -50,14 +50,14 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:Mercateo/default-immutables.git</connection>
-        <url>https://github.com/Mercateo/default-immutables.git</url>
+        <connection>scm:git:git@github.com:Uniscon/default-immutables.git</connection>
+        <url>https://github.com/Uniscon/default-immutables.git</url>
         <tag>HEAD</tag>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <immutables.version>2.7.2</immutables.version>
+        <immutables.version>2.7.5</immutables.version>
     </properties>
 
     <dependencies>
@@ -89,7 +89,20 @@
                     <groupId>org.immutables</groupId>
                     <artifactId>value</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>io.vavr</groupId>
+                    <artifactId>vavr</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.vavr</groupId>
+                    <artifactId>vavr-match</artifactId>
+                </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>0.10.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -171,14 +184,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <id>default-jar</id>
                         <configuration>
                             <archive>
                                 <manifestEntries>
-                                    <Automatic-Module-Name>com.mercateo.immutables</Automatic-Module-Name>
+                                    <Automatic-Module-Name>com.uniscon.immutables</Automatic-Module-Name>
                                 </manifestEntries>
                             </archive>
                         </configuration>
@@ -193,7 +206,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.2</version>
+                <version>0.8.3</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
