@@ -10,6 +10,7 @@ import org.immutables.vavr.encodings.VavrEncodingEnabled;
 @Value.Style(
         visibility = org.immutables.value.Value.Style.ImplementationVisibility.PUBLIC,
         builderVisibility = org.immutables.value.Value.Style.BuilderVisibility.SAME,
+        defaultAsDefault = true, // default methods do not require the @Value.Default annotation
         // Detect names starting with underscore
         typeAbstract = "_*",
         // Generate without any suffix, just raw detected name

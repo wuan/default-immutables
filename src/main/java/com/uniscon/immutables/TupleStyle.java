@@ -13,6 +13,7 @@ import java.lang.annotation.Target;
         // as if they are annotated with @ValueStyle.Parameter
         visibility = Value.Style.ImplementationVisibility.PUBLIC, // Generated class will be always public
         defaults = @Value.Immutable(builder = false), // Disable copy methods and builder
+        defaultAsDefault = true, // default methods do not require the @Value.Default annotation
         typeAbstract = "_*", // Detect names starting with underscore
         typeImmutable = "*") // Generate without any suffix, just raw detected name
 public @interface TupleStyle {
