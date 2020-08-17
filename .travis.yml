@@ -1,6 +1,8 @@
 language: java
 install: "mvn install -DskipTests=true"
-script: "mvn -e clean test jacoco:report coveralls:report"
+script:
+  - "mvn -e clean test jacoco:report"
+  - "bash <(curl -Ls https://coverage.codacy.com/get.sh)"
 jdk:
   - openjdk8
   - openjdk9
