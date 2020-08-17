@@ -1,8 +1,10 @@
-package com.uniscon.immutables;
+package net.wuerl.immutables;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
 import org.immutables.vavr.encodings.VavrEncodingEnabled;
 
@@ -17,5 +19,7 @@ import org.immutables.vavr.encodings.VavrEncodingEnabled;
         typeImmutable = "*"
 )
 @VavrEncodingEnabled
+@JsonSerialize
+@JsonDeserialize
 public @interface ValueStyle {
 }

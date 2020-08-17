@@ -1,5 +1,7 @@
-package com.uniscon.immutables;
+package net.wuerl.immutables;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
 
 import java.lang.annotation.ElementType;
@@ -16,5 +18,7 @@ import java.lang.annotation.Target;
         defaultAsDefault = true, // default methods do not require the @Value.Default annotation
         typeAbstract = "_*", // Detect names starting with underscore
         typeImmutable = "*") // Generate without any suffix, just raw detected name
+@JsonSerialize
+@JsonDeserialize
 public @interface TupleStyle {
 }

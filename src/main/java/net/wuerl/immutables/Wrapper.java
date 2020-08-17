@@ -1,4 +1,4 @@
-package com.uniscon.immutables;
+package net.wuerl.immutables;
 
 import org.immutables.value.Value;
 

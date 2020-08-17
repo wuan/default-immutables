@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/Uniscon/default-immutables.svg?branch=master)](https://travis-ci.org/Uniscon/default-immutables)
-[![Coverage Status](https://coveralls.io/repos/github/Uniscon/default-immutables/badge.svg?branch=master)](https://coveralls.io/github/Uniscon/default-immutables?branch=master)
-[![MavenCentral](https://img.shields.io/maven-central/v/com.uniscon/default-immutables.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.uniscon%22%20AND%20a%3A%22default-immutables%22)
+[![Build Status](https://travis-ci.org/wuan/default-immutables.svg?branch=master)](https://travis-ci.org/wuan/default-immutables)
+[![Coverage Status](https://coveralls.io/repos/github/wuan/default-immutables/badge.svg?branch=master)](https://coveralls.io/github/wuan/default-immutables?branch=master)
+[![MavenCentral](https://img.shields.io/maven-central/v/net.wuerl/default-immutables.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.wuerl%22%20AND%20a%3A%22default-immutables%22)
 
 
-# com.uniscon:default-immutables
+# net.wuerl:default-immutables
 
 Default-Styles and Helper-Classes for common use cases of [Immutables](http://immutables.github.io/), a framework based on annotation processors to generate simple, safe and consistent value objects
 
