@@ -5,14 +5,7 @@ script:
   - "bash <(curl -Ls https://coverage.codacy.com/get.sh)"
 jdk:
   - openjdk8
-  - openjdk9
-  - openjdk10
   - openjdk11
-  - openjdk12
-  - openjdk13
   - openjdk14
-  - oraclejdk10
   - oraclejdk11
-  - oraclejdk12
-  - oraclejdk13
   - oraclejdk14
